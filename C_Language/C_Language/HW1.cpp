@@ -1,4 +1,5 @@
-//HW1 조계철
+//HW1 나에 대한 정보를 출력하는 프로그램을 작성하시오
+//조계철
 
 #include<stdio.h>
 #pragma warning (disable:4996)

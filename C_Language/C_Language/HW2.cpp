@@ -1,4 +1,5 @@
-//HW2 조계철
+//HW2 용돈 화폐단위 환산 프로그램
+//조계철
 
 #include<stdio.h>
 #pragma warning (disable:4996)
