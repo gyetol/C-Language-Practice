@@ -25,39 +25,24 @@ void input(double* weight, double* height)
 	int res;
 	char garbage;
 
-	while (1)
-	{
+
+	while (1) {
 		printf("몸무게를 입력하세요(kg):");
-		res=scanf("%lf%c", weight, &garbage);
-		if(res==2){
-			if (garbage == '\n') { break; }
-			else { 
-				printf("잘못입력하셨습니다.\n");
-				myflush();
-			}
+		res = scanf("%lf%c", weight, &garbage);
+		if (res == 2 && garbage == '\n') {
+			break;
 		}
-		else { 
-			printf("잘못입력하셨습니다.\n");
-			myflush();
-			continue;
-		}
+		printf("잘못된 입력입니다.\n");
+		myflush();
 	}
-	while (1)
-	{
-		printf("키를 입력하세요(cm):");
+	while (1) {
+		printf("키를 입력하세요(m):");
 		res = scanf("%lf%c", height, &garbage);
-		if (res == 2) {
-			if (garbage == '\n') { break; } 
-			else { 
-				printf("잘못입력하셨습니다.\n");
-				myflush();
-			}
+		if (res == 2 && garbage == '\n') {
+			break;
 		}
-		else {
-			printf("잘못입력하셨습니다.\n");
-			myflush();
-			continue;
-		}
+		printf("잘못된 입력입니다.\n");
+		myflush();
 	}
 
 	return;
